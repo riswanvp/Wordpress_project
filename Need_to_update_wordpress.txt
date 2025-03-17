@@ -1,0 +1,18 @@
+Need to update wordpress DB details (Database name, db_host , db_username and user_password) in wp-config.php example provided below
+===
+
+define( 'DB_NAME', getenv('WORDPRESS_DB_NAME') ?: 'wordpress' );
+define( 'DB_USER', getenv('WORDPRESS_DB_USER') ?: 'your_wordpress_user' );
+define( 'DB_PASSWORD', getenv('WORDPRESS_DB_PASSWORD') ?: 'cSL2xQdXpXTm' );
+define( 'DB_HOST', getenv('WORDPRESS_DB_HOST') ?: 'db:3306' );
+
+====
+
+Then, try to complete installation of wordpress
+
+url: http://ipaddress:8080 
+
+1. Select language
+2. Set website title, admin username, password and email-id
+3. Click on Install wordpress
+4. Login using the wordpress credntials
